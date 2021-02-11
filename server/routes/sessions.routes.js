@@ -6,7 +6,7 @@ const {
   getSession,
   editSession,
   deleteSession,
-} = require("../controllers/sessions.controllers");
+} = require("../controllers/sessions.controller");
 
 const router = express.Router();
 

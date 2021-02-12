@@ -1,15 +1,9 @@
 const User = require("../models/user.model");
 const mongoose = require("mongoose");
 
+// TODO: Implement authentication
 // Register User
 exports.registerUser = (req, res) => {
-  const newUser = new User({
-    _id: mongoose.Types.ObjectId(),
-    fullName: "Victor",
-    hashedPassword: "12345",
-  });
-
-  console.log(newUser);
   res.json({
     user: newUser,
   });

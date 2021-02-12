@@ -33,7 +33,10 @@ const sessionSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    challenges: {},
+    challenges: {
+      type: String,
+      required: true,
+    },
     nextSessionGoals: {
       type: String,
       required: true,

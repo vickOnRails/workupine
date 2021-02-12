@@ -8,6 +8,7 @@ const {
   deleteSession,
 } = require("../controllers/sessions.controller");
 
+// All handler functions are moved to another file to house container logic
 const router = express.Router();
 
 // Create New Sessions
@@ -18,8 +19,8 @@ router.get("/", getAllSessions);
 
 router.get("/:sessionId", getSession);
 
-router.put("/", editSession);
+router.put("/:sessionId", editSession);
 
-router.delete("/", deleteSession);
+router.delete("/:sessionId", deleteSession);
 
 module.exports = router;
